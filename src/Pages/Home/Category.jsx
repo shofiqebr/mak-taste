@@ -1,5 +1,5 @@
 
-const Category = (props) => {
+const Category = () => {
     const data = [
         {
             "id": 1,
