@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <div className="bg-[#8d3041] ">
@@ -33,7 +35,7 @@ const Footer = () => {
                 www:mmkhanfoods.com
               </p>
             </div>
-            <div className="md:w-[316px]">
+            <div className="md:w-[316px] text-white">
               <div>
                 MAK Taste Shop (Akhrabazar) <br />
                 Address: Akhrabazar, Kishoreganj saddar, Kishoreganj. <br />
@@ -130,14 +132,21 @@ const Footer = () => {
           <hr className="mt-[30px] text-white" />
           <div className="flex flex-col md:flex-row gap-3 items-center justify-center pt-[9px] md:py-8">
             <p className="flex-1 font-bold text-white">
-              Copyright © Classy Style 2022 Development IONIC Corporation
+              Copyright © Classy Style 2024 Development{" "}
+              <Link
+                className="cursor-pointer underline"
+                target="_blank"
+                to="https://ioniccorporation.com/"
+              >
+                IONIC Corporation
+              </Link>
             </p>
             <div className="flex-1">
               <img
                 src="https://i.ibb.co/XLjLNxR/SSLCommerz-Pay-With-logo-All-Size-01.png"
                 alt=""
               />
-            </div> 
+            </div>
           </div>
         </div>
       </div>
