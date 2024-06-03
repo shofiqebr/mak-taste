@@ -21,14 +21,14 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between max-w-screen-xl mx-auto px-4 p-2">
       <div onClick={() => setOpen(!open)} className="lg:hidden">
-        <div className="flex items-center">
+        <div className="flex items-center cursor-pointer">
           <MdOutlineMenu className="text-3xl" />
           MENU
         </div>
       </div>
       <div
-        className={`h-[100vh] fixed w-56 bg-white  z-50 transition duration-700 ${
-          open ? "left-0 top-0 h-screen" : "-left-80"
+        className={`h-[100vh] fixed  bg-white z-50  ${
+          open ? "left-0 top-0 h-screen w-56 transition duration-700" : "-left-80"
         }`}
       >
         <div

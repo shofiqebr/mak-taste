@@ -13,7 +13,7 @@ const Category = () => {
     {
       id: 3,
       image: "https://i.ibb.co/qMfSs5y/Dairy-Foods-70x70.jpg",
-      name: "LUNCH & DINNER",
+      name: "LUNCH ",
     },
     {
       id: 4,
@@ -23,7 +23,7 @@ const Category = () => {
     {
       id: 5,
       image: "https://i.ibb.co/qMfSs5y/Dairy-Foods-70x70.jpg",
-      name: "MUSTARD OIL",
+      name: "MUSTARD",
     },
     {
       id: 6,
@@ -60,11 +60,11 @@ const Category = () => {
   return (
     <div className="mt-12 max-w-screen-2xl mx-auto px-4 lg:px-8">
       <h1 className="text-center font-bold text-2xl">OUR CATEGORIES</h1>
-      <div className="flex gap-6 items-center justify-between  overflow-x-auto mt-8 ">
+      <div className="flex gap-6 items-center justify-between overflow-x-auto mt-8 ">
         {data.map((item) => (
           <div className="flex flex-col items-center " key={item.id}>
-            <img className="bg-white" src={item.image} alt="" />
-            <p className="font-bold">{item.name}</p>
+            <img className="bg-white min-w-20" src={item.image} alt="" />
+            <p className="font-bold text-sm">{item.name}</p>
           </div>
         ))}
       </div>
