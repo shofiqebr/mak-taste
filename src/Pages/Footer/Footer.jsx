@@ -141,7 +141,7 @@ const Footer = () => {
                 IONIC Corporation
               </Link>
             </p>
-            <div className="flex-1">
+            <div className="flex-1 mb-20">
               <img
                 src="https://i.ibb.co/XLjLNxR/SSLCommerz-Pay-With-logo-All-Size-01.png"
                 alt=""
