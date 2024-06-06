@@ -110,9 +110,11 @@ const Card = () => {
               <h1 className="text-2xl font-semibold text-[#8d3041] ">
                 {item.price} ৳{" "}
               </h1>
+              
               <button className="bg-[#ff0000] px-6 py-2 rounded-full text-white ">
                 ADD TOCART
               </button>
+              
             </div>
           </div>
           </Link>

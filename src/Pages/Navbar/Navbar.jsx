@@ -77,7 +77,12 @@ const Navbar = () => {
       <div className="hidden lg:block">
         <div className="flex items-center gap-2">
          <Link to='/login'> <CiUser className="text-2xl " /> </Link> |
-          <LuShoppingCart className="text-2xl" /> |
+          
+          
+          <Link to='/cart'>
+          <LuShoppingCart className="text-2xl" />
+          </Link>
+           |
           <div className="flex font-bold">
             0 <TbCurrencyTaka className="text-2xl" />
           </div>
