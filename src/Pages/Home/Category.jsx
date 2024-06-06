@@ -1,3 +1,7 @@
+// import { FaChevronCircleRight } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+
 const Category = () => {
   const data = [
     {
@@ -59,13 +63,32 @@ const Category = () => {
 
   return (
     <div className="mt-12 max-w-screen-2xl mx-auto px-4 lg:px-8">
-      <h1 className="text-center font-bold text-2xl">OUR CATEGORIES</h1>
+
+
+
+
+
+      <section className=" flex justify-between items-center">
+
+      <span className="md:block hidden"></span >
+      <span className="text-center font-bold text-2xl">OUR CATEGORIES</span>
+
+      <Link to='/allCategory'>
+      <span className=" md:text-xl font-semibold flex justify-center items-center">All <FaChevronRight/> </span>
+      </Link>
+      </section>
+
+
+
+
       <div className="flex gap-6 items-center justify-between overflow-x-auto mt-8 ">
         {data.map((item) => (
-          <div className="flex flex-col items-center " key={item.id}>
+          <Link to='/category' key={item.id}>
+          <div className="flex flex-col items-center " >
             <img className="bg-white min-w-20" src={item.image} alt="" />
             <p className="font-bold text-sm">{item.name}</p>
           </div>
+          </Link>
         ))}
       </div>
     </div>

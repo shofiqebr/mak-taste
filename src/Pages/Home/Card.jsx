@@ -1,4 +1,5 @@
 import { CiStar } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const Card = () => {
   const data = [
@@ -88,7 +89,9 @@ const Card = () => {
     <div className="max-w-screen-2xl mx-auto px-4 mt-16">
       <div className="grid lg:grid-cols-4 gap-5 justify-items-center grid-cols-1 md:grid-cols-3">
         {data.map((item) => (
-          <div key={item.id}>
+
+          <Link to='/product' key={item.id}>
+          <div >
             <img src={item.image} alt="" />
             <div className="text-center space-y-3">
               <h3 className="font-bold ">{item.name}</h3>
@@ -112,6 +115,7 @@ const Card = () => {
               </button>
             </div>
           </div>
+          </Link>
         ))}
       </div>
     </div>

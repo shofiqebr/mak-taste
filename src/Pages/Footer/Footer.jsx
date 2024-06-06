@@ -132,7 +132,7 @@ const Footer = () => {
           <hr className="mt-[30px] text-white" />
           <div className="flex flex-col md:flex-row gap-3 items-center justify-center pt-[9px] md:py-8">
             <p className="flex-1 font-bold text-white">
-              Copyright © Classy Style 2024 Development{" "}
+              Copyright © Mak Taste shop 2024 Development{" "}
               <Link
                 className="cursor-pointer underline"
                 target="_blank"

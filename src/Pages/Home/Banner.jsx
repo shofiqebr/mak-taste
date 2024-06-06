@@ -5,7 +5,7 @@ const Banner = () => {
 
 
   return (
-    <div className=" mt-4">
+    <div className=" lg:mt-3 mt-14">
      <Carousel showThumbs={false}	>
         <div>
           <img src="https://i.ibb.co/5FBHfgq/Web-Header-Image-21.jpg" />

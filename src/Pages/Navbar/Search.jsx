@@ -2,7 +2,7 @@ import { CiSearch } from "react-icons/ci";
 
 const Search = () => {
     return (
-        <div className="bg-[#4f3326] mt-20 relative mb-3 lg:hidden xl:hidden 2xl:hidden">
+        <div className="bg-[#4f3326] mt-20 relative mb-3 lg:hidden xl:hidden 2xl:hidden ">
         <div className="px-12 py-3 ">
           <input
             className="w-full text-white bg-[#4f3326] border rounded-full mx-auto py-1 px-4"

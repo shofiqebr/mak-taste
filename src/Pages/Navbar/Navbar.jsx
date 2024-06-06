@@ -19,7 +19,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="flex z-40 fixed w-full bg-white top-0 items-center justify-between  mx-auto px-4 p-2">
+    <nav className="flex z-40 fixed w-full bg-white top-0 items-center justify-between  mx-auto px-4 p-">
       <div onClick={() => setOpen(!open)} className="lg:hidden">
         <div className="flex items-center cursor-pointer">
           <MdOutlineMenu className="text-3xl" />
@@ -76,7 +76,7 @@ const Navbar = () => {
       </div>
       <div className="hidden lg:block">
         <div className="flex items-center gap-2">
-          <CiUser className="text-2xl " /> |
+         <Link to='/login'> <CiUser className="text-2xl " /> </Link> |
           <LuShoppingCart className="text-2xl" /> |
           <div className="flex font-bold">
             0 <TbCurrencyTaka className="text-2xl" />
