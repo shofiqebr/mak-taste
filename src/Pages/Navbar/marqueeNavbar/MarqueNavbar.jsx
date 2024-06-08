@@ -18,7 +18,7 @@ const MarqueNavar = () => {
                 {/* search area start */}
 
 
-                <div className=" absolute right-[250px] rounded-full px-1   flex justify-center items-center">
+                <div className=" absolute right-[450px] rounded-full px-1   flex justify-center items-center">
 
                     <input type="text"  placeholder="Search for product " className=" px-2 rounded-l-full border-2 xl:h-[35px]"/>
                     <IoSearch className="pl-2 text-3xl bg-[#8d3041] rounded-r-full border xl:h-[35px]" />
